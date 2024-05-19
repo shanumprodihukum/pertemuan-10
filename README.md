@@ -75,3 +75,17 @@ A.Menampilkan semua isi/record pada tabel bisa menggunakan kode berikut :
 SELECT * FROM mahasiswa;
 B.Mengubah data tanggal lahir Mahasiswa yang bernama Ari menjadi : 1979-08-31 menggunakan kode berikut :
 UPDATE mahasiswa SET tgl_lahir='1979-08-31' WHERE nama='Ari Santoso;
+C.Menampilkan satu baris / record data yang telah diubah tadi yaitu record dengan nama Ari saja dengan cara sebagai berikut :
+SELECT * FROM mahasiswa WHERE nama='Ari Santoso;
+D.Menghapus Mahasiswa yang bernama Dina dengan cara sebagai berikut:
+DELETE FROM mahasiswa WHERE nama='Dina Marlina'
+E.Menampilkan record atau data yang tanggal kelahirannya lebih dari atau sama dengan 1996-1-2 dengan cara sebagai berikut :
+SELECT * FROM mahasiswa WHERE tgl_lahir<='1996-01-02';
+F.Menampilkan semua Mahasiswa yang berasal dari Bekasi dan berjenis kelamin perempuan dengan cara sebagai berikut :
+G.Menampilkan semua Mahasiswa yang berasal dari Bekasi dengan jenis kelamin laki-laki atau Mahasiswa yang berumur lebih dari 22 tahun dengan jenis kelamin wanita dengan cara sebagai berikut :
+SELECT * FROM mahasiswa WHERE kota='Bekasi' AND jenis_kelamin='Laki-laki' 
+OR tgl_lahir<='2002-4-22' AND jenis_kelamin='Perempuan';
+H.Menampilkan data nama dan jalan Mahasiswa saja dari tabel tersebut dengan cara sebagai berikut :
+SELECT nama, jalan FROM mahasiswa;
+I.Menampilkan data Mahasiswa terurut berdasarkan nama dengan cara sebagai berikut :
+SELECT * FROM mahasiswa ORDER BY nama ASC;
