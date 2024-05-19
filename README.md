@@ -89,3 +89,30 @@ H.Menampilkan data nama dan jalan Mahasiswa saja dari tabel tersebut dengan cara
 SELECT nama, jalan FROM mahasiswa;
 I.Menampilkan data Mahasiswa terurut berdasarkan nama dengan cara sebagai berikut :
 SELECT * FROM mahasiswa ORDER BY nama ASC;
+Evaluasi dan Pertanyaan
+Tulis semua perintah-perintah SQL percobaan di atas beserta outputnya!
+1. Menambah data :
+INSERT INTO <table> (field1, ..., fieldn) VALUE (value1, ..., valuen)
+Contoh :
+INSERT INTO biodata (nim, nama, alamat) VALUES ('11223344','fahri','Bekasi'),
+('11223345', 'Muzaqi', 'Jakarta');
+2.Menampilkan data :
+SELECT * FROM <table> SELECT [field1, ..., fieldn] FROM <table>
+Contoh : SELECT * FROM biodata;
+3.Mengubah data :
+UPDATE <table> SET field1=val1, ..., fieldn=valn WHERE <kondisi>;
+Contoh :
+UPDATE biodata SET nim=11223346 WHERE nama='Muzaqi';
+4.engubah data :
+UPDATE <table> SET field1=val1, ..., fieldn=valn WHERE <kondisi>;
+Contoh :
+UPDATE biodata SET nim=11223346 WHERE nama='Muzaqi'
+Apa bedanya penggunaan BETWEEN dan penggunaan operator >= dan <= ?
+- (Contoh BETWEEN: tgl_lahir BETWEEN '1972-10-10' AND '1992-10-11')
+
+- (Contoh >= dan <=: tgl_lahir >= '1980-11-11' AND tgl_lahir <= '1992-10-11')
+Operator BETWEEN ini untuk menangani operasi “jangkauan” sedangkan operator >= dan <= termasuk pada operator relasional. Operator yang digunakan untuk perbandingan antara dua buah nilai. Jenis dari operator ini adalah: = , >, <, >=, <=, <>.
+Kesimpulan
+Data Manipulation Language (DML) adalah bagian dari Structured Query Language (SQL) yang digunakan untuk mengatur dan memanipulasi data pada database. Dengan DML, Anda dapat melakukan berbagai operasi terhadap data.
+
+DDL (Data Definition Language) adalah bahasa yang digunakan untuk mendeskripsikan data dan ringkasan dalam suatu database. DDL digunakan untuk membuat dan memodifikasi struktur objek pada suatu database menggunakan perintah dan sintaks spesifik yang telah ditetapkan.
